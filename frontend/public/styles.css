@@ -1,0 +1,133 @@
+/* General Styling */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background-color: #f9f9f9;
+  }
+  
+  .container {
+    padding: 40px;
+  }
+  
+  h2 {
+    color: #333;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #222;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .navbar-brand {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+  }
+  
+  .navbar li {
+    margin-left: 20px;
+  }
+  
+  .navbar a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  .navbar a.active,
+  .navbar a:hover {
+    color: #fff;
+  }
+  
+  /* Stock Grid Layout */
+  .stock-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .stock-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    cursor: pointer;
+  }
+  
+  .stock-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .stock-card h3 {
+    margin: 0;
+    font-size: 22px;
+  }
+  
+  .stock-card p {
+    color: #555;
+  }
+  
+  /* Stock Details */
+  .stock-info-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  }
+  
+  /* Back Button */
+  #backBtn {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    border-radius: 8px;
+  }
+  
+  #backBtn:hover {
+    background-color: #666;
+  }
+  
+  /* Search and Calculate Section */
+  .animated-card {
+    background-color: white;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    transform: scale(0.95);
+    animation: popIn 0.5s ease forwards;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Animation */
+  @keyframes popIn {
+    to {
+      transform: scale(1);
+    }
+  }

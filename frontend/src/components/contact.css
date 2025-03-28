@@ -1,0 +1,80 @@
+/* Centering the contact form */
+.contact-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Styling the contact form */
+.contact-form {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Label styling */
+.contact-form label {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0 5px;
+    text-align: left;
+}
+
+/* Input and textarea styling */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Email input box black with white text */
+.contact-form input[type="email"] {
+    background-color: black;
+    color: white;
+    border: 1px solid #333;
+}
+
+/* Fix text color inside the email input */
+.contact-form input[type="email"]::placeholder {
+    color: white;
+    opacity: 0.7;
+}
+
+/* Ensuring email and message box alignment */
+.contact-form textarea {
+    resize: vertical;
+}
+
+/* Styling the button */
+.contact-form button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-container {
+        width: 90%;
+    }
+}
